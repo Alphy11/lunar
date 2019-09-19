@@ -11,12 +11,12 @@ const styleSheet: StyleSheet = ({ ui }) => ({
     backgroundRepeat: 'no-repeat',
   },
 
-  backgroundSize_cover: {
-    backgroundSize: 'cover',
+  objectFit_cover: {
+    objectFit: 'cover',
   },
 
-  backgroundSize_contain: {
-    backgroundSize: 'contain',
+  objectFit_contain: {
+    objectFit: 'contain',
   },
 
   backgroundPosition_top: {
@@ -137,8 +137,8 @@ function Image({
             styles.image,
             styles.background,
             styles.fadeIn,
-            cover && styles.backgroundSize_cover,
-            contain && styles.backgroundSize_contain,
+            cover && styles.objectFit_cover,
+            contain && styles.objectFit_contain,
             alignTop && styles.backgroundPosition_top,
             alignBottom && styles.backgroundPosition_bottom,
             { width, height, backgroundImage: `url(${src})` },
